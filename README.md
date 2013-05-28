@@ -1,4 +1,2 @@
-mazeSolver
-==========
-
 Maze Solver
+==========
