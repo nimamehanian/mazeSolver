@@ -1,0 +1,6 @@
+@font-face {
+  font-family: 'Titillium';
+  src: url('../fonts/TitilliumThin.otf');
+  src: local('☺'),
+    url('../fonts/TitilliumThin.otf') format('opentype');
+}

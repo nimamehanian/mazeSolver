@@ -1,0 +1,53 @@
+<!doctype html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" ><![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" lang="en"><!--<![endif]-->
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>C3 Quiz</title>
+
+    <link rel="stylesheet" href="assets/stylesheets/fontfaces.css" />
+    <link rel="stylesheet" href="assets/stylesheets/normalize.css" />
+    <link rel="stylesheet" href="assets/stylesheets/foundation.css" />
+    <link rel="stylesheet" href="assets/stylesheets/c3Quiz.css" />
+    <script src="assets/javascripts/vendor/custom.modernizr.js"></script>
+    <script src="assets/javascripts/vendor/underscore.js"></script>
+    <script src="mazeSolver.js"></script>
+    <script src="aStar.js"></script>
+  </head>
+  <body>
+    <a href="https://github.com/nimamehanian">
+      <img class="githubLogo" src="./assets/images/github.png">
+    </a>
+
+    <div class="header row">
+      <h1 class="header small-10 large-10 small-centered large-centered columns">Maze Solver</h1>
+      <h6 class="header small-10 large-10 small-centered large-centered columns">by Nima Mehanian</h6>
+      <h6 class="header small-10 large-10 small-centered large-centered columns">
+        <p>
+          Open your console: <span class="instructions">Option + Command + J</span>.<br />
+          Press the big red button.<br />
+          Enjoy turn-by-turn directions for escaping the maze.
+        </p>
+      </h6>
+      <button class="escape alert button small">Escape the maze!!</button>
+    </div>
+
+    <div class="row">
+
+    </div>
+    <script>
+    document.write('<script src=' +
+    ('__proto__' in {} ? 'assets/javascripts/vendor/zepto' : 'assets/javascripts/vendor/jquery') +
+    '.js><\/script>')
+    </script>
+    <script src="assets/javascripts/foundation.min.js"></script>
+    <script>$(document).foundation();</script>
+    <script>
+      $('.escape').on('click', function() {
+        escapeTheMaze([1, 1], [10, 19]);
+      });
+    </script>
+  </body>
+</html>
